@@ -7,9 +7,9 @@ function setup() {
   if (userInput != null)
   {
     const hours = userInput;
-    const userInput = prompt("Please target minutes:");
+    userInput = prompt("Please target minutes:");
     const mins = userInput;
-    const userInput = prompt("Please target seconds:");
+    userInput = prompt("Please target seconds:");
     const secs = userInput;
     target.setTime(hours, minutes, seconds);
     reloadAtTime(target);
