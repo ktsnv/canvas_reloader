@@ -2,11 +2,16 @@ setTimeout(setup, 0);
 
 function setup() {
   const target = new Date();
-  const time;
-  const userInput = prompt("Please enter your name:");
+  const userInput = prompt("Please target hour:");
+  
   if (userInput != null)
   {
-    time = userInput;
+    const hours = userInput;
+    const userInput = prompt("Please target minutes:");
+    const mins = userInput;
+    const userInput = prompt("Please target seconds:");
+    const secs = userInput;
+    target.setTime(hours, minutes, seconds);
     reloadAtTime(target);
   }
 }
